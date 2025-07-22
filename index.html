@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <title>答案之书 💅 Book of Answers</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="book-container">
+        <div class="book" id="book">
+            <div class="book-cover">
+                <span class="emoji">💅</span>
+                <h1>答案之书</h1>
+                <h2>Book of Answers</h2>
+                <button id="flip-btn" class="flip-btn" type="button">翻页 / Flip</button>
+            </div>
+            <div class="book-page" id="book-page">
+                <form id="question-form">
+                    <input type="text" id="question" placeholder="请输入你的问题 / Enter your question..." required />
+                    <button type="submit">翻书 / Flip</button>
+                </form>
+                <div class="answer" id="answer"></div>
+                <button id="back-btn" class="back-btn" type="button">返回初始页面 / Back</button>
+            </div>
+        </div>
+    </div>
+    <audio id="flip-sound" src="flip.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
